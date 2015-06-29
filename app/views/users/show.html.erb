@@ -10,7 +10,11 @@
   </aside>
   <div class="col-md-8">
     <% if @user.shelves.any? %>
-      <h3>Shelves (<%= @user.shelves.count %>)</h3>
+      <h3>You have <%= pluralize(@user.shelves.count, 'Shelf', 'Shelves') %> 
+  
+  
+  
+      </h3>
       <ol class="shelves">
         <%= render @user.shelves %>
       </ol>
