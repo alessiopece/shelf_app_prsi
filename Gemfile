@@ -3,6 +3,8 @@ source 'http://rubygems.org'
 gem 'bootstrap-sass'
 gem 'bcrypt'
 gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 gem 'rails-html-sanitizer'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
