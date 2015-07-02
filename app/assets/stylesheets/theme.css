@@ -1076,7 +1076,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #4b4934;
-  background-color: #efeacc;
+  background-image: url("wallpaper.png") ;
 }
 input,
 button,
@@ -4468,8 +4468,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ffffff;
 }
 .navbar-inverse {
-  background-color: #4e2008;
-  border-color: #200d03;
+  background-color: transparent;
+
 }
 .navbar-inverse .navbar-brand {
   color: #ffffff;
@@ -4835,7 +4835,6 @@ a.badge:focus {
   padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #efeacc;
 }
 .jumbotron h1,
 .jumbotron .h1 {
