@@ -1,4 +1,8 @@
 <div id="shelf-<%= shelf.id %>">
   <span class="type"><%= shelf.type %></span>
   <%= image_tag "shelf.png",:id=>"shelf" %>
+<% if current_user?(shelf.user) %>
+      <%= link_to "delete", shelf, method: :delete,
+                                       data: { confirm: "You sure?" } %>
+    <% end %> 
 </div>
