@@ -122,6 +122,10 @@ $gray-medium-light: #eaeaea;
   @include box_sizing;
 }
 
+#shelf_type{
+  height:35px;
+}
+
 /* sidebar */
 
 aside {

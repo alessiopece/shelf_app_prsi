@@ -1,7 +1,7 @@
 <%= form_for(@shelf) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
-  <div class="field">
+  <div class="field col-md-6">
     <%= f.text_area :type, placeholder: "Add a tag" %>
   </div>
-  <%= f.submit "Add", class: "btn btn-primary" %>
+  <%= f.submit "Add", class: "btn btn-primary col-md-2" %>
 <% end %>
