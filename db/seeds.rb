@@ -19,4 +19,13 @@ User.create!(name:  "Example User",
                email: email,
                password:              password,
                password_confirmation: password)
+  
+end
+
+Shelf.create(user_id:1)
+
+20.times do |n|
+Shelf.create(user_id:n)
+Shelf.create(user_id:n)
+Shelf.create(user_id:n)
 end
