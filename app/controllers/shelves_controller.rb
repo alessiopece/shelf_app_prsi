@@ -3,9 +3,11 @@ class ShelvesController < ApplicationController
   before_action :correct_user,   only: :destroy
   def create
     @shelf = current_user.shelves.build(shelf_params)
+
     if @shelf.save
       flash[:success] = "Shelf added!"
-      redirect_to root_url
+	
+      redirect_to current_user
     else
       render 'static_pages/home'
     end

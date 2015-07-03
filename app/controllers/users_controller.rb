@@ -12,6 +12,7 @@ before_action :correct_user,   only: [:edit, :update]
 
   def show
     @user = User.find(params[:id])
+    @shelf = current_user.shelves.build if logged_in?
   end
 
   def create
