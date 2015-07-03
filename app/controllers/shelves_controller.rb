@@ -23,6 +23,7 @@ private
     def shelf_params
       params.require(:shelf).permit(:content)
     end
+
     def correct_user
       @shelf = current_user.shelves.find_by(id: params[:id])
       redirect_to root_url if @shelf.nil?
