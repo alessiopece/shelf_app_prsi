@@ -1,8 +1,25 @@
 <div id="shelf-<%= shelf.id %>">
   <span class="type"><%= shelf.type %></span>
+ 
+ <div class="center">
+
+      
+      <li class="books">
+        <%= render 'books/book' %>
+      </li>
+
+  </div>
+
+
+
   <%= image_tag "shelf.png",:id=>"shelf" %>
 <% if current_user?(shelf.user) %>
-      <%= link_to "delete", shelf, method: :delete,
+      <%= link_to "Delete", shelf, method: :delete,
                                        data: { confirm: "You sure?" } %>
+      <%= link_to "Add Book", books_path(:shelf_id => shelf.id), method: :post %>
+
+
+
+
     <% end %> 
 </div>
