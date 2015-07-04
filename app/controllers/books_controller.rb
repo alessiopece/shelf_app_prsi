@@ -5,6 +5,7 @@ class BooksController < ApplicationController
   def create
     @book = Book.new
     @book.shelf_id = params[:shelf_id] if params.has_key?(:shelf_id)
+    @book.title = params[:title] if params.has_key?(:title) 
     if @book.save
       flash[:success] = "Book added!"
       redirect_to current_user

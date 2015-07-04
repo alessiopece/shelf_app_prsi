@@ -1,4 +1,4 @@
-<div id="shelf-<%= shelf.id %>">
+<div id="shelf-<%= shelf.id %>" class="shelf">
   <span class="type"><%= shelf.type %></span>
  
 
@@ -12,7 +12,7 @@
 <% if current_user?(shelf.user) %>
       <%= link_to "Delete", shelf, method: :delete,
                                        data: { confirm: "You sure?" } %>
-      <%= link_to "Add Book", books_path(:shelf_id => shelf.id), method: :post %>
+      <%= link_to "Add Book", books_path(:shelf_id => shelf.id,:title => "moby_dick"), method: :post %>
 
 
 

@@ -228,6 +228,10 @@ input {
   padding-right: 40px;
 }
 
+.shelf{
+  position: relative;
+}
+
 
 
 .users {
@@ -243,7 +247,15 @@ input {
 /* Books */
 
 #book {
- width: 15%;
+ width: 82px;
+ float: left;
+ display: inline;
+ height:20px;
+}
+
+#book img {
+ width: 80%;
+
 }
 
 .books {
@@ -251,9 +263,11 @@ input {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-  display: inline;
+  bottom: 190px;
+  left: 100px;
+  position: absolute;
 }
 
-.books li {
-display: inline;
-}
+
+
+
