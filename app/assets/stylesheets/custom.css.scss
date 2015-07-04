@@ -243,5 +243,17 @@ input {
 /* Books */
 
 #book {
- width: 30%;
+ width: 15%;
+}
+
+.books {
+  float: left;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+
+.books li {
+display: inline;
 }
