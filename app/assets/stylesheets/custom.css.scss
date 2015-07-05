@@ -272,7 +272,8 @@ input {
 }
 
 #item img {
- width: 80%;
+ width: 65px;
+ height: 87px;
  -webkit-box-reflect: below 2px
  -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(255,255,255,.5))); /* reflection is supported by webkit only */
   -webkit-transition: all 0.3s;
@@ -304,7 +305,8 @@ input {
 }
 #book img {
   position: absolute;
-  width: 80px;
+  width: 65px;
+ height: 87px;
   left: 35px;
 }
 
@@ -326,7 +328,8 @@ input {
 }
 #film img {
   position: absolute;
-  width: 80px;
+  width: 65px;
+ height: 87px;
   left: 35px;
 }
 
@@ -348,7 +351,8 @@ input {
 }
 #game img {
   position: absolute;
-  width: 80px;
+  width: 65px;
+ height: 87px;
   left: 35px;
 }
 
