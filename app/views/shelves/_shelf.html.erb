@@ -4,6 +4,7 @@
 
       <ul class="books">
         <%= render shelf.books %>
+	<%= render shelf.games %>
       </ul>
 
 
@@ -13,6 +14,8 @@
       <%= link_to "Delete", shelf, method: :delete,
                                        data: { confirm: "You sure?" } %>
       <%= link_to "Add Book", books_path(:shelf_id => shelf.id,:title => "moby_dick"), method: :post %>
+
+      <%= link_to "Add Game", games_path(:shelf_id => shelf.id,:title => "moby_dick"), method: :post %>
 
 
 
