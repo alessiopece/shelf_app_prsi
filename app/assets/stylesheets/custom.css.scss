@@ -246,14 +246,14 @@ input {
 
 /* Books */
 
-#book {
+#item {
  width: 82px;
  float: left;
  display: inline;
  height:20px;
 }
 
-#book img {
+#item img {
  width: 80%;
  -webkit-box-reflect: below 2px
  -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(255,255,255,.5))); /* reflection is supported by webkit only */
@@ -261,12 +261,12 @@ input {
   -webkit-transform-origin: 50% 100%;
 }
 
-#book:hover img {
+#item:hover img {
 -webkit-transform: scale(2);
   margin: 0 2em;
 }
 
-.books {
+.items {
   float: left;
   list-style-type: none;
   margin: 0px;

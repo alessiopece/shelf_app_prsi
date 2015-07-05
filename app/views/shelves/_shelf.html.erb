@@ -2,21 +2,22 @@
   <span class="type"><%= shelf.type %></span>
  
 
-      <ul class="books">
+      <ul class="items">
         <%= render shelf.books %>
-	<%= render shelf.games %>
+      
+      <%= render shelf.games %>
       </ul>
-
 
 
   <%= image_tag "shelf.png",:id=>"shelf" %>
 <% if current_user?(shelf.user) %>
-      <%= link_to "Delete", shelf, method: :delete,
+
+
+     <%= link_to "Delete", shelf, method: :delete,
                                        data: { confirm: "You sure?" } %>
-      <%= link_to "Add Book", books_path(:shelf_id => shelf.id,:title => "moby_dick"), method: :post %>
+     <%= link_to "Add Book", books_path(:shelf_id => shelf.id,:title => "moby_dick"), method: :post %> 
 
-      <%= link_to "Add Game", games_path(:shelf_id => shelf.id,:title => "moby_dick"), method: :post %>
-
+     <%= link_to "Add Game", games_path(:shelf_id => shelf.id,:title => "the_last_of_us"), method: :post %> 
 
 
 
