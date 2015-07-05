@@ -4,4 +4,5 @@ class Shelf < ActiveRecord::Base
   validates :user_id, presence: true
   has_many :books, dependent: :destroy
   has_many :games, dependent: :destroy
+  has_many :films, dependent: :destroy
 end
