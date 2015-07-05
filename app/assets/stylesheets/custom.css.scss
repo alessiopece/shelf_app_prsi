@@ -262,7 +262,7 @@ input {
   }
 }
 
-/* Books */
+/* Items */
 
 #item {
  width: 82px;
@@ -293,6 +293,49 @@ input {
   left: 165px;
   position: absolute;
 }
+
+#book {
+  width: 100px;
+  height: 135px;
+  padding-top: 19px;
+  position: relative;
+  list-style-type: none;
+
+
+}
+#book img {
+  position: absolute;
+  width: 80px;
+}
+
+#film {
+  width: 100px;
+  height: 135px;
+  padding-top: 19px;
+  position: relative;
+  list-style-type: none;
+
+
+}
+#film img {
+  position: absolute;
+  width: 80px;
+}
+
+#game {
+  width: 100px;
+  height: 135px;
+  padding-top: 19px;
+  position: relative;
+  list-style-type: none;
+
+
+}
+#game img {
+  position: absolute;
+  width: 80px;
+}
+
 
 
 
