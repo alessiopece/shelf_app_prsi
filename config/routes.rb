@@ -15,7 +15,8 @@ Rails.application.routes.draw do
   resources :shelves,  only: [:create, :destroy]  
   resources :books,  only: [:create, :destroy] 
   resources :games,  only: [:create, :destroy]
-  resources :films,  only: [:create, :destroy]  
+  resources :films,  only: [:create, :destroy]
+  resources :items, only: [:create, :destroy]  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

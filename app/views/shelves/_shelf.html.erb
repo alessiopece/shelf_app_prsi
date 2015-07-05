@@ -1,12 +1,9 @@
 <div id="shelf-<%= shelf.id %>" class="shelf">
-  <span class="type"><%= shelf.type %></span>
+  <div class="panel category"><%= shelf.category %></div>
  
 
       <ul class="items">
-        <%= render shelf.books %>
-      
-      <%= render shelf.games %>
-      <%= render shelf.films %>
+        <%= render shelf.items %>
       </ul>
 
 
@@ -16,11 +13,8 @@
 
      <%= link_to "Delete", shelf, method: :delete,
                                        data: { confirm: "You sure?" } %>
-     <%= link_to "Add Book", books_path(:shelf_id => shelf.id,:title => "moby_dick"), method: :post %> 
+     <%= link_to "Add item", items_path(:shelf_id => shelf.id,:title => "moby_dick"), method: :post %> 
 
-     <%= link_to "Add Game", games_path(:shelf_id => shelf.id,:title => "the_last_of_us"), method: :post %>
-
-     <%= link_to "Add Film", films_path(:shelf_id => shelf.id,:title => "titanic"), method: :post %>  
 
 
 

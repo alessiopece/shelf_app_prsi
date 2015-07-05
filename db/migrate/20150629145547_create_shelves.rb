@@ -2,7 +2,7 @@ class CreateShelves < ActiveRecord::Migration
   def change
     create_table :shelves do |t|
       t.references :user, index: true, foreign_key: true
-      t.text :type
+      t.string :category
 
       t.timestamps null: false
     end

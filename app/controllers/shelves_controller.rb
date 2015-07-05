@@ -4,6 +4,7 @@ class ShelvesController < ApplicationController
   def create
     @shelf = current_user.shelves.build(shelf_params)
 
+
     if @shelf.save
       flash[:success] = "Shelf added!"
 	
@@ -23,7 +24,7 @@ class ShelvesController < ApplicationController
 private
 
     def shelf_params
-      params.require(:shelf).permit(:content)
+      params.require(:shelf).permit(:category)
     end
 
     def correct_user
