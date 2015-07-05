@@ -317,7 +317,6 @@ input {
 }
 
 #film {
-  width: 100px;
   height: 135px;
   padding-top: 19px;
   position: relative;
@@ -328,10 +327,18 @@ input {
 #film img {
   position: absolute;
   width: 80px;
+  left: 35px;
+}
+
+#film a{
+  float: right;
+  bottom: 55px;
+  position: absolute;
+  right:0px;
+
 }
 
 #game {
-  width: 100px;
   height: 135px;
   padding-top: 19px;
   position: relative;
@@ -342,6 +349,15 @@ input {
 #game img {
   position: absolute;
   width: 80px;
+  left: 35px;
+}
+
+#game a{
+  float: right;
+  bottom: 55px;
+  position: absolute;
+  right:0px;
+
 }
 
 
