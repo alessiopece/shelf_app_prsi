@@ -295,7 +295,6 @@ input {
 }
 
 #book {
-  width: 100px;
   height: 135px;
   padding-top: 19px;
   position: relative;
@@ -306,6 +305,15 @@ input {
 #book img {
   position: absolute;
   width: 80px;
+  left: 35px;
+}
+
+#book a{
+  float: right;
+  bottom: 55px;
+  position: absolute;
+  right:0px;
+
 }
 
 #film {
