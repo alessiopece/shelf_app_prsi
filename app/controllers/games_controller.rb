@@ -17,6 +17,7 @@ class GamesController < ApplicationController
   def destroy
   end
 
+  
 private
 
 

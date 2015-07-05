@@ -17,6 +17,8 @@ class FilmsController < ApplicationController
   def destroy
   end
 
+  
+
 private
 
 

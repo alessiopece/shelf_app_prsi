@@ -13,8 +13,19 @@
 
      <%= link_to "Delete", shelf, method: :delete,
                                        data: { confirm: "You sure?" } %>
-     <%= link_to "Add item", items_path(:shelf_id => shelf.id,:title => "moby_dick"), method: :post %> 
+     <%= link_to "Add item", items_path(:shelf_id => shelf.id,:title => "moby_dick"), method: :post %>
 
+     <!-- Trigger the modal with a button -->
+     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#addItem">Add Items</button>
+
+     <!-- Modal -->
+     <div id="addItem" class="modal fade" role="dialog">
+     <div class="modal-dialog modal-lg">
+
+     <!-- Modal content-->
+     <%= render 'shared/modal', :shelf => shelf %>
+     </div>
+     </div>
 
 
 

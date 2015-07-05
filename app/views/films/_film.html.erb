@@ -1,3 +1,4 @@
-<li id="item">
+<li id="film">
 <%= image_tag(image_path("#{film.title}.jpg"))%>
+<%= link_to "Add Film", items_path(:shelf_id => shelf.id,:title => film.title), method: :post %>
 </li>
