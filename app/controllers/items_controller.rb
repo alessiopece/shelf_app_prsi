@@ -1,6 +1,5 @@
 class ItemsController < ApplicationController
   before_action :logged_in_user, only: [:create, :destroy]
-  before_action :correct_user,   only: :destroy
 
   def create
     @item = Item.new
@@ -15,7 +14,13 @@ class ItemsController < ApplicationController
   end
 
   def destroy
+	@item = Item.find_by(id: params[:item_id])
+	@item.destroy
+   	flash[:success] = "Item deleted"
+	redirect_to current_user
+
   end
+
 
 end
 
