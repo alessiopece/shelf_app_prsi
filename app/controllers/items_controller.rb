@@ -5,6 +5,7 @@ class ItemsController < ApplicationController
     @item = Item.new
     @item.shelf_id = params[:shelf_id] if params.has_key?(:shelf_id)
     @item.title = params[:title] if params.has_key?(:title) 
+    @item.year = params[:year] if params.has_key?(:year) 
     if @item.save
       flash[:success] = "Item added!"
       redirect_to current_user

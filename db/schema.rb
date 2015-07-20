@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20150705191248) do
   create_table "books", force: :cascade do |t|
     t.string   "title"
     t.string   "author"
-    t.integer  "year"
+    t.string   "year"
     t.string   "genre"
     t.integer  "shelf_id"
     t.datetime "created_at", null: false

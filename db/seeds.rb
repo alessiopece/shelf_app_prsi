@@ -40,6 +40,6 @@ following.each { |followed| user.follow(followed) }
 followers.each { |follower| follower.follow(user) }
 
 #Items database
-Book.create(title:"moby_dick", year: 1900)
+Book.create(title:"moby_dick", year: "1900")
 Film.create(title:"titanic")
 Game.create(title:"the_last_of_us")

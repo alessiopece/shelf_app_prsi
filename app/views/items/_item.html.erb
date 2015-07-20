@@ -5,7 +5,8 @@ $(document).ready(function(){
 </script>
 
 <li id="item" >
-<%= image_tag(image_path("#{item.title}.jpg"), :data => {:toggle => "popover", :trigger => "hover", :content => item.title})%>
+<%= image_tag(image_path("#{item.title}.jpg"), :data => {:toggle => "popover", :trigger => "hover", :content => item.title + "\n" +
+(item.year).to_s })%>
 
 <% if current_user?(item.shelf.user) %>
 
