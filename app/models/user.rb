@@ -67,7 +67,7 @@ class User < ActiveRecord::Base
 
   # Returns a user's status feed.
   def feed
-    Shelf.where("user_id in (?) OR user_id = ?", following_ids, id)
+     # Shelf.where("user_id in (?) OR user_id = ?", following_ids, id)
   end
 
 end
