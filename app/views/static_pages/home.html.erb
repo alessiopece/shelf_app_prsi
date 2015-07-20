@@ -11,7 +11,9 @@
     </aside>
    <div class="col-md-8">
       <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
+      <% if @feeds.nil? %>
+      <%= render @user.feeds %>
+      <% end %>
     </div>
   </div>
 <% else %>

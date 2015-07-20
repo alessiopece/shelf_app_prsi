@@ -7,6 +7,8 @@ class ShelvesController < ApplicationController
 
     if @shelf.save
       flash[:success] = "Shelf added!"
+
+      Feed.create(:user_id => current_user.id,:category => 2, :shelf_id => @shelf.id)
 	
       redirect_to current_user
     else

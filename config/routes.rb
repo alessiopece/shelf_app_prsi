@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   resources :games,  only: [:create, :destroy]
   resources :films,  only: [:create, :destroy]
   resources :items, only: [:create, :destroy]  
+  resources :feeds,  only: [:create, :destroy] 
   resources :users do
     member do
       get :following, :followers
