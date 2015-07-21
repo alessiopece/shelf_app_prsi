@@ -17,7 +17,11 @@ class ShelvesController < ApplicationController
   end
 
   def destroy
-    current_user.feeds.find_by(shelf_id: @shelf.id).destroy
+    current_user.feeds.find_each do |f|
+       if (f.shelf_id == @shelf.id) 
+		f.destroy
+	end
+    end
     @shelf.destroy
 	
     flash[:success] = "Shelf deleted"

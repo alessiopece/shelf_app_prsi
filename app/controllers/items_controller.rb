@@ -17,7 +17,11 @@ class ItemsController < ApplicationController
 
   def destroy
 	@item = Item.find_by(id: params[:item_id])
-        current_user.feeds.find_by(item_id: @item.id).destroy
+        current_user.feeds.find_each do |f|
+        if (f.item_id == @item.id) 
+		f.destroy
+	end
+    end
 	@item.destroy
    	flash[:success] = "Item deleted"
 	redirect_to current_user
