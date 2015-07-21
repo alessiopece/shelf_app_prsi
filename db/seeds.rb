@@ -7,37 +7,35 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.create!(name:  "Example User",
-             email: "example@railstutorial.org",
-             password:              "foobar",
-             password_confirmation: "foobar")
+#User.create!(name:  "Example User",
+#             email: "example@railstutorial.org",
+#             password:              "foobar",
+#             password_confirmation: "foobar")
+#
+#20.times do |n|
+#  name  = Faker::Name.name
+#  email = "example-#{n+1}@railstutorial.org"
+#  password = "password"
+#  User.create!(name:  name,
+#               email: email,
+#               password:              password,
+#               password_confirmation: password)
+#  
+#end
 
-20.times do |n|
-  name  = Faker::Name.name
-  email = "example-#{n+1}@railstutorial.org"
-  password = "password"
-  User.create!(name:  name,
-               email: email,
-               password:              password,
-               password_confirmation: password)
-  
-end
-
-Shelf.create(user_id:1)
-
-20.times do |n|
-Shelf.create(user_id:n)
-Shelf.create(user_id:n)
-Shelf.create(user_id:n)
-end
+#Shelf.create(user_id:1)
+#
+#20.times do |n|
+#Shelf.create(user_id:n)
+#end
 
 # Following relationships
-users = User.all
-user  = users.first
-following = users[2..50]
-followers = users[3..40]
-following.each { |followed| user.follow(followed) }
-followers.each { |follower| follower.follow(user) }
+#users = User.all
+#user  = users.first
+#following = users[2..50]
+#followers = users[3..40]
+#following.each { |followed| user.follow(followed) }
+#followers.each { |follower| follower.follow(user) }
 
 #Items database
 
@@ -54,7 +52,6 @@ Film.create(title:"Master and Commander", author: "Peter Weir", year: "2003", ge
 Film.create(title:"Matrix", author: "Andy Wachowski", year: "1999", genre: "Action, Sci-Fi")
 Film.create(title:"Frozen", author: "Chris Buck", year: "2013", genre: "Animation")
 Film.create(title:"The Wolf of Wall Street", author: "Martin Scorsese", year: "2013", genre: "Biography, Comedy, Crime")
-
 
 #Games
 Game.create(title:"Half-Life 2", author: "Valve", year: "2004", genre: "Sci-Fi, FPS")
