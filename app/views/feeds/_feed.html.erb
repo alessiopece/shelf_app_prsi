@@ -1,10 +1,17 @@
 
 <% if (feed.category == "1") %>
-	<h1> feed 1 <h1>
+	<h4 class = "panel"> 
+<%= link_to gravatar_for(feed.user, size: 30), current_user %>
+<%=  link_to(feed.user.name, "/users/#{feed.user.id}") %> ha aggiunto <%= feed.item.title %> alla shelf <%=  link_to(feed.shelf.category, "/users/#{feed.user.id}") %> 
+        </h4>
 <% end %>
 <% if (feed.category == "2") %>
-	<h1> feed 2 <h1>
+	<h4 class = "panel"> 
+<%= link_to gravatar_for(feed.user, size: 30), current_user %>
+<%=  link_to(feed.user.name, "/users/#{feed.user.id}") %> ha aggiunto una nuova shelf <%=  link_to(feed.shelf.category, "/users/#{feed.user.id}") %> 
+        </h4>
 <% end %>
 <% if (feed.category == "3") %>
-	<h1> feed 3 <h1>
+	<h4> feed 3 </h4>
 <% end %>
+

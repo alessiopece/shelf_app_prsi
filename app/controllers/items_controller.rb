@@ -8,6 +8,7 @@ class ItemsController < ApplicationController
     @item.year = params[:year] if params.has_key?(:year) 
     if @item.save
       flash[:success] = "Item added!"
+      Feed.create(:user_id => current_user.id,:category => 1, :shelf_id => @item.shelf.id, :item_id => @item.id)
       redirect_to current_user
     else
       render 'static_pages/home'
