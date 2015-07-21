@@ -17,7 +17,9 @@ class ShelvesController < ApplicationController
   end
 
   def destroy
+    current_user.feeds.find_by(shelf_id: @shelf.id).destroy
     @shelf.destroy
+	
     flash[:success] = "Shelf deleted"
     redirect_to request.referrer || root_url
 
