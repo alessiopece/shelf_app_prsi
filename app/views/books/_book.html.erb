@@ -1,12 +1,15 @@
-<li id="book">
-<%= image_tag(image_path("#{book.title}.jpg"))%>
+<li id="book" class = "row">
+<%= image_tag(image_path("#{book.title}.jpg"), class:"col-md-5")%>
 <%= link_to "Add Book", items_path(:shelf_id => shelf.id,:title => book.title, :year => book.year), method: :post, class:"btn-info btn-sm" %>
-<%= book.title %>
+
+<p class = "col-md-8">
+<b>Title:</b> <%= book.title %>
 <br>
-<%= book.author %>
+<b>Author:</b> <%= book.author %>
 <br>
-<%= book.year %>
+<b>Year:</b> <%= book.year %>
 <br>
-<%= book.genre %>
+<b>Genre:</b> <%= book.genre %>
+</p>
 </li>
 

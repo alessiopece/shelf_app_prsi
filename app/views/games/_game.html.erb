@@ -1,11 +1,13 @@
-<li id="game">
-<%= image_tag(image_path("#{game.title}.jpg"))%>
+<li id="game" class = "row">
+<%= image_tag(image_path("#{game.title}.jpg"),class:"col-md-5")%>
 <%= link_to "Add Game", items_path(:shelf_id => shelf.id,:title => game.title), method: :post, class:"btn-info btn-sm" %>
-<%= game.title %>
+<p class = "col-md-8">
+<b>Title:</b> <%= game.title %>
 <br>
-<%= game.author %>
+<b>Developer:</b> <%= game.author %>
 <br>
-<%= game.year %>
+<b>Year:</b> <%= game.year %>
 <br>
-<%= game.genre %>
+<b>Genre:</b> <%= game.genre %>
+</p>
 </li>

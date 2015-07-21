@@ -304,17 +304,24 @@ input {
 
 }
 #book img {
-  position: absolute;
-  width: 65px;
- height: 87px;
-  left: 35px;
+  width: 14%;
+  left: 30px;
+}
+
+#book p {
+  float: left;
+  text-align: left;
+  padding-left: 30px;
+  b {
+     color: #a23607;
+  }
+  
 }
 
 #book a{
-  float: right;
   bottom: 55px;
   position: absolute;
-  right:0px;
+  right: 15px;
 
 }
 
@@ -327,19 +334,27 @@ input {
 
 }
 #film img {
-  position: absolute;
-  width: 65px;
- height: 87px;
-  left: 35px;
+  width: 14%;
+  left: 30px;
 }
 
 #film a{
-  float: right;
   bottom: 55px;
   position: absolute;
-  right:0px;
+  right: 15px;
 
 }
+
+#film p {
+  float: left;
+  text-align: left;
+  padding-left: 30px;
+  b {
+     color: #a23607;
+  }
+  
+}
+
 
 #game {
   height: 135px;
@@ -350,19 +365,27 @@ input {
 
 }
 #game img {
-  position: absolute;
-  width: 65px;
- height: 87px;
-  left: 35px;
+  width: 14%;
+  left: 30px;
 }
 
 #game a{
-  float: right;
   bottom: 55px;
   position: absolute;
-  right:0px;
+  right: 15px;
 
 }
+
+#game p {
+  float: left;
+  text-align: left;
+  padding-left: 30px;
+  b {
+     color: #a23607;
+  }
+  
+}
+
 
 
 /* Stats */
@@ -418,3 +441,10 @@ input {
   float: none;
 
 }
+
+/* Modal */
+.modal-dialog {
+  max-width: 60%;
+}
+
+

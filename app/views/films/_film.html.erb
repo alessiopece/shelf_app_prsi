@@ -1,11 +1,14 @@
-<li id="film">
-<%= image_tag(image_path("#{film.title}.jpg"))%>
+<li id="film" class = "row">
+<%= image_tag(image_path("#{film.title}.jpg"),class:"col-md-5")%>
 <%= link_to "Add Film", items_path(:shelf_id => shelf.id,:title => film.title, :author => film.author, :year => film.year, :genre => film.genre), method: :post, class:"btn-info btn-sm" %>
-<%= film.title %>
+
+<p class = "col-md-8">
+<b>Title:</b> <%= film.title %>
 <br>
-<%= film.author %>
+<b>Director:</b> <%= film.author %>
 <br>
-<%= film.year %>
+<b>Year:</b> <%= film.year %>
 <br>
-<%= film.genre %>
+<b>Genre:</b> <%= film.genre %>
+</p>
 </li>
