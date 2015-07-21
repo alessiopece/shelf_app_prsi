@@ -3,7 +3,7 @@ class CreateFilms < ActiveRecord::Migration
     create_table :films do |t|
       t.string :title
       t.string :author
-      t.integer :year
+      t.string :year
       t.string :genre
       t.references :shelf, index: true, foreign_key: true
       

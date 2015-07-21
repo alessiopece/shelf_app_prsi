@@ -40,6 +40,25 @@ following.each { |followed| user.follow(followed) }
 followers.each { |follower| follower.follow(user) }
 
 #Items database
-Book.create(title:"moby_dick", year: "1900")
-Film.create(title:"titanic")
-Game.create(title:"the_last_of_us")
+
+#Books
+Book.create(title:"Moby Dick", author: "Herman Melville", year: "1851", genre: "Adventure")
+Book.create(title:"Ruby on Rails Tutorial", author: "Michael Hartl", year: "2015", genre: "Manual")
+Book.create(title:"The Da Vinci Code", author: "Dan Brown", year: "2003", genre: "Mystery, Thriller")
+Book.create(title:"The Maze Runner", author: "James Dashner", year: "2009", genre: "Dystopian")
+Book.create(title:"Fight Club", author: "Chuck Palahniuk", year: "1996", genre: "Drama")
+
+#Films
+Film.create(title:"Titanic", author: "James Cameron", year: "1997", genre: "Drama, Romance")
+Film.create(title:"Master and Commander", author: "Peter Weir", year: "2003", genre: "Action, Adventure, Drama")
+Film.create(title:"Matrix", author: "Andy Wachowski", year: "1999", genre: "Action, Sci-Fi")
+Film.create(title:"Frozen", author: "Chris Buck", year: "2013", genre: "Animation")
+Film.create(title:"The Wolf of Wall Street", author: "Martin Scorsese", year: "2013", genre: "Biography, Comedy, Crime")
+
+
+#Games
+Game.create(title:"Half-Life 2", author: "Valve", year: "2004", genre: "Sci-Fi, FPS")
+Game.create(title:"The Legend of Zelda - Skyward Sword", author: "Nintendo", year: "2011", genre: "Action, RPG")
+Game.create(title:"The Last of Us", author: "Naughty Dog", year: "2013", genre: "Survival Horror")
+Game.create(title:"The Elder Scrolls V - Skyrim", author: "Bethesda", year: "2011", genre: "Action RPG")
+Game.create(title:"Assassin's Creed 3", author: "Ubisoft", year: "2012", genre: "Adventure, Stealth")

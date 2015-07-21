@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20150720212846) do
   create_table "films", force: :cascade do |t|
     t.string   "title"
     t.string   "author"
-    t.integer  "year"
+    t.string   "year"
     t.string   "genre"
     t.integer  "shelf_id"
     t.datetime "created_at", null: false
@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 20150720212846) do
   create_table "games", force: :cascade do |t|
     t.string   "title"
     t.string   "author"
-    t.integer  "year"
+    t.string   "year"
     t.string   "genre"
     t.integer  "shelf_id"
     t.datetime "created_at", null: false
