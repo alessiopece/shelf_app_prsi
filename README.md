@@ -11,7 +11,6 @@ Istruzioni su come eseguire il software <br>
   <i>~$ sudo unzip shelf_app_prsi-master -d .</i> <br>
   <i>~$ cd shelf_app_prsi-master </i>
   <i>~$ sh install.sh </i><br>
-  <i>~$ rails server </i><br>
   <b>Portrebbe essere richiesto di inserire la password di amministratore del sistema </b>
 
 I file di configurazione sono: <br>
