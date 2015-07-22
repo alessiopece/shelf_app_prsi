@@ -14,7 +14,7 @@ Istruzioni su come eseguire il software <br>
   <i>~$ rails server </i><br>
   <b>Portrebbe essere richiesto di inserire la password di amministratore del sistema </b>
 
-I file sorgente sono: <br>
+I file di configurazione sono: <br>
 <i>shelf_app_prsi-master/app/assets/stylesheet/theme.css</i><br>
 <i>shelf_app_prsi-master/app/assets/stylesheet/custom.css.scss</i><br>
 <i>shelf_app_prsi-master/Gemfile</i><br>
@@ -40,5 +40,7 @@ I file sorgente sono: <br>
 <i>shelf_app_prsi-master/db/migrate/20150705150210_create_items.rb</i><br>
 <i>shelf_app_prsi-master/db/migrate/20150705191248_create_relationships.rb</i><br>
 <i>shelf_app_prsi-master/db/migrate/20150720212846_create_feeds.rb</i><br>
+
+La documentazione del progetto è localizzata in shelf_app_prsi-master/Documentation
 
 
