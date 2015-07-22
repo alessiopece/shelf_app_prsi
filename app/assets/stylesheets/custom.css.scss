@@ -26,6 +26,10 @@
 	margin-bottom: 10px;
  }
 
+ .row aside {
+  padding-bottom: 10px;
+}
+
 /* typography */
 
  h1, h2, h3, h4, h5, h6 {
@@ -128,6 +132,12 @@ $gray-medium-light: #eaeaea;
 
 /* sidebar */
 
+#welcome {
+  width: 55%;
+  margin-left: 20%;
+
+}
+
 aside {
   section.user_info {
     margin-top: 20px;
@@ -209,9 +219,10 @@ input {
 /*Shelves*/
 
 #shelf {
-  width: 750px;
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  position: initial;
+  padding:0px;
 }
 
 #shelf_logo{
@@ -226,10 +237,15 @@ input {
 
 .shelves {
   padding-right: 40px;
+  margin-top: 5%;
 }
 
 .shelf{
   position: relative;
+}
+
+.shelf .btn {
+  margin-top: 6%;
 }
 
 .category{
@@ -238,8 +254,8 @@ input {
   padding-right: 8px;
   margin: 0px;
   position: absolute;
-  bottom: 43px;
-  left: 230px;
+  bottom: 13%;
+  left: 15%;
   text-align: center;
   font-family: monospace;
   font-weight: bold;
@@ -265,33 +281,60 @@ input {
 /* Items */
 
 #item {
- width: 82px;
+ width: 100px;
  float: left;
  display: inline;
- height:20px;
+ height:110px;
+ position: relative;
 }
 
 #item img {
- width: 65px;
- height: 87px;
- -webkit-box-reflect: below 2px
- -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(255,255,255,.5))); /* reflection is supported by webkit only */
+ width: 70px;
+ height: 100px;
+ float: left;
+ -webkit-box-reflect: below 1px
+ -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.9, transparent), to(rgba(255,255,255,.4))); /* reflection is supported by webkit only */
   -webkit-transition: all 0.3s;
   -webkit-transform-origin: 50% 100%;
 }
 
+#delbtn {
+  margin-left: 90px;
+  top: -45px;
+  margin-bottom: 90px;
+  left: 0px;
+
+  position: absolute;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+
+}
+
+#delbtn:hover {
+
+  opacity: 1;
+
+}
+
+
+
 #item:hover img {
--webkit-transform: scale(2);
-  margin: 0 2em;
+-webkit-transform: scale(1.5);
+}
+
+#item:hover #delbtn {
+  opacity: 1;
 }
 
 .items {
+  width:80%;
   float: left;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-  bottom: 180px;
-  left: 165px;
+  left: 6%;
   position: absolute;
 }
 

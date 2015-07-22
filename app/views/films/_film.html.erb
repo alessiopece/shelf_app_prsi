@@ -1,6 +1,6 @@
 <li id="film" class = "row">
 <%= image_tag(image_path("#{film.title}.jpg"),class:"col-md-5")%>
-<%= link_to "Add Film", items_path(:shelf_id => shelf.id,:title => film.title, :author => film.author, :year => film.year, :genre => film.genre), method: :post, class:"btn-info btn-sm" %>
+<%= link_to "Add Film", items_path(:shelf_id => shelf.id, :title => film.title, :author => film.author, :year => film.year, :genre => film.genre), method: :post, class:"btn-info btn-sm" %>
 
 <p class = "col-md-8">
 <b>Title:</b> <%= film.title %>

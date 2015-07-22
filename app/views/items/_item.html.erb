@@ -5,12 +5,13 @@ $(document).ready(function(){
 </script>
 
 <li id="item" >
+
+<%= link_to "X", item_path(:item_id => item.id), method: :delete,
+                                      class: "btn btn-primary btn-xs", id: "delbtn" %>
 <%= image_tag(image_path("#{item.title}.jpg"))%>
 
 <% if current_user?(item.shelf.user) %>
 
-<%= link_to "X", item_path(:item_id => item.id), method: :delete,
-                                      class: "btn btn-primary btn-xs" %>
 <% end %>
 
 </li>

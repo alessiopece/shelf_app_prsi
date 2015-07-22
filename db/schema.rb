@@ -90,7 +90,6 @@ ActiveRecord::Schema.define(version: 20150720212846) do
     t.string   "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "type"
   end
 
   add_index "shelves", ["user_id", "created_at"], name: "index_shelves_on_user_id_and_created_at"

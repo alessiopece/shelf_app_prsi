@@ -1,4 +1,5 @@
-<div id="shelf-<%= shelf.id %>" class="shelf">
+<div id="shelf-<%= shelf.id %>" class="shelf row">
+
  <% if shelf.category != "" %>
   <div class="panel category"><%= shelf.category %></div>
  <% end %>
@@ -9,23 +10,24 @@
       </ul>
 
 
-  <%= image_tag "shelf.png",:id=>"shelf" %>
+  <%= image_tag "shelf.png",:id=>"shelf", class: "col-md-10" %>
 <% if current_user?(shelf.user) %>
 
 
      <%= link_to "Delete Shelf", shelf, method: :delete,
-                                       data: { confirm: "You sure?" }, class: "btn btn-primary btn-xs" %>
+                                       data: { confirm: "You sure?" }, class: "btn btn-primary btn-xs col-md-1" %>
     
      <!-- Trigger the modal with a button -->
      <% if shelf.items.count < 8  %>
-     <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#addItem">Add Items</button>
+     <button type="button" class="btn btn-info btn-xs col-md-1" data-toggle="modal" data-target="#addItem-<%= shelf.id %>">Add Items</button>
      <% end %>
 
      <!-- Modal -->
-     <div id="addItem" class="modal fade" role="dialog">
+     <div id="addItem-<%= shelf.id %>" class="modal fade" role="dialog">
      <div class="modal-dialog modal-lg">
 
      <!-- Modal content-->
+
   <%= render 'shared/modal', :shelf => shelf %> 
      </div>
      </div>

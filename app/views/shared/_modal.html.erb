@@ -6,21 +6,20 @@
       <div class="modal-body">
  <!-- CONTENT -->
         <ul class="nav nav-pills">
-  	<li class="active"><a data-toggle="pill" href="#books">Books</a></li>
-  	<li><a data-toggle="pill" href="#films">Films</a></li>
-  	<li><a data-toggle="pill" href="#games">Games</a></li>
-	</ul>
-
-	<div class="tab-content">
-	  <div id="books" class="tab-pane fade in active">
-	    <%= render @books, :shelf => shelf %>
-	  </div>
-	  <div id="films" class="tab-pane fade">
-	    <%= render @films, :shelf => shelf %>
-	  </div>
-	  <div id="games" class="tab-pane fade">
-	    <%= render @games, :shelf => shelf %>
-	  </div>
+    <li class="active"><a data-toggle="pill" href="#books-<%= shelf.id %>">Books</a></li>
+    <li><a data-toggle="pill" href="#films-<%= shelf.id %>">Films</a></li>
+    <li><a data-toggle="pill" href="#games-<%= shelf.id %>">Games</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="books-<%= shelf.id %>" class="tab-pane fade in active">
+      <%= render @books, :shelf => shelf %>
+    </div>
+    <div id="films-<%= shelf.id %>" class="tab-pane fade">
+      <%= render @films, :shelf => shelf %>
+    </div>
+    <div id="games-<%= shelf.id %>" class="tab-pane fade">
+      <%= render @games, :shelf => shelf %>
+    </div>
  <!--CONTENT-->
 </div>
       </div>
