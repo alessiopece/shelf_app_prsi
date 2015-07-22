@@ -12,7 +12,7 @@ Istruzioni su come eseguire il software <br>
   <i>~$ cd shelf_app_prsi-master </i>
   <i>~$ sh install.sh </i><br>
   <i>~$ rails server </i><br>
-  <b>Portrebbe essere richiesta la password di amministratore del sistema </b>
+  <b>Portrebbe essere richiesto di inserire la password di amministratore del sistema </b>
 
 I file sorgente sono: <br>
 <i>shelf_app_prsi-master/app/assets/stylesheet/theme.css</i><br>
