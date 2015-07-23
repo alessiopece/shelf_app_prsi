@@ -9,7 +9,7 @@ Software consegnato: <br>
 Istruzioni su come eseguire il software <br>
   <i>~$ cd /home/user/Downloads </i><br>
   <i>~$ sudo unzip shelf_app_prsi-master -d .</i> <br>
-  <i>~$ cd shelf_app_prsi-master </i>
+  <i>~$ cd shelf_app_prsi-master </i><br>
   <i>~$ sh install.sh </i><br>
   <b>Portrebbe essere richiesto di inserire la password di amministratore del sistema </b>
 
